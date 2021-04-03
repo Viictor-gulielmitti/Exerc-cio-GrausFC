@@ -11,10 +11,12 @@ namespace GRAUS
             Console.WriteLine(".................[GRAUS].........................");
             Console.WriteLine ( " Digite a temperatura (em ° F): " );
             entrada  =  Console.ReadLine();
-            C = Convert.ToDouble (entrada);
-            F = (F: 32 / 1,8);
+            F = Convert.ToDouble (entrada);
+            C = ((F - 32) / 1.8);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine ("$ \n Equivalência");
-            Console.WriteLine ($" Essa temperatura em °C: { "C [GRAUS]"}");
+            Console.WriteLine ($" Essa temperatura em °C: {C}");
             Console.WriteLine ("................[GRAUS].........................");
-            
+        }
+    }
+}
